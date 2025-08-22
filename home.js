@@ -8,7 +8,7 @@ document.getElementById("add-btn").addEventListener("click", function(e){
    const acName=document.getElementById("ac-name").value;
    const availableBalance=parseInt(document.getElementById("available-balance").innerText);
 
-   if(acNo.length<11 )
+   if(acNo.length!==11 )
    {
     alert("Hey "+acName+" Please provide your valid 11 digit Account Number");
     return;
