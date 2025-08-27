@@ -76,19 +76,37 @@ document.getElementById("out-btn").addEventListener("click", function(e){
   toSetInnerText(newTotalBalance);
 })
 
+//Transfer Money
 
 
+//toggline function
+
+function handleToggle(id){
+   const forms=document.getElementsByClassName("form");
+    for(const form of forms){
+        form.style.display="none"
+    }
+    document.getElementById(id).style.display="block"
+     
+
+}
 
 document.getElementById("add-money-btn").addEventListener("click", function(){
-    document.getElementById("cash-out").style.display="none";
-     document.getElementById("add-money").style.display="block";
+   handleToggle("add-money")
+    
   
 })
 
 
 
 document.getElementById("cash-out-btn").addEventListener("click", function(){
-    document.getElementById("add-money").style.display="none";
-     document.getElementById("cash-out").style.display="block";
+     handleToggle("cash-out")
+    
 
+})
+
+document.getElementById("transfer-money-btn").addEventListener("click", function(){
+     handleToggle("transfer-money")
+     
+   
 })
