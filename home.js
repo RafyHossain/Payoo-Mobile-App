@@ -23,6 +23,11 @@ function getInnerText(id){
     return elementValueNumber;
 }
 
+function toSetInnerText(value){
+    const availableBalanceElement=document.getElementById("available-balance");
+    availableBalanceElement.innerText=value;
+}
+
 document.getElementById("add-btn").addEventListener("click", function(e){
     e.preventDefault()
     
@@ -50,7 +55,8 @@ document.getElementById("add-btn").addEventListener("click", function(e){
    
     const newTotalBalance=availableBalance+amountAdd;
 
-   document.getElementById("available-balance").innerText=newTotalBalance;
+  // document.getElementById("available-balance").innerText=newTotalBalance;
+  toSetInnerText(newTotalBalance);
 
    
 })
@@ -66,7 +72,8 @@ document.getElementById("out-btn").addEventListener("click", function(e){
 
     const newTotalBalance=availableBalance-withdrawAmount;
 
-   document.getElementById("available-balance").innerText=newTotalBalance;
+  // document.getElementById("available-balance").innerText=newTotalBalance;
+  toSetInnerText(newTotalBalance);
 })
 
 
