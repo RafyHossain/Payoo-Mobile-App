@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,12 +34,12 @@
     </div>
 
     <div class="max-w-lg mx-auto mt-8  min-h-[200px] grid grid-cols-3 gap-4 bg-white p-3">
-        <div class="text-center p-3 rounded-xl border-2 border-[#0808081a] ">
+        <div id="add-money-btn" class="text-center p-3 rounded-xl border-2 border-[#0808081a] ">
             <img src="./assets/wallet1.png" class="mx-auto" alt="">
             <h2>Add Money</h2>
 
         </div>
-        <div class="text-center p-3 rounded-xl border-2 border-[#0808081a]">
+        <div id="cash-out-btn" class="text-center p-3 rounded-xl border-2 border-[#0808081a]">
             <img src="./assets/send1.png" class="mx-auto" alt="">
             <h2>Cashout</h2>
 
@@ -76,7 +69,8 @@
     </div>
 
     <div class="all-form max-w-lg mx-auto mt-5">
-        <div>
+        <!--Add Money-->
+        <div id="add-money">
             <h1>Add Money</h1>
             <form action="" class="bg-white rounded-2xl p-8 mt-5">
               <div class="mt-5">
@@ -112,6 +106,33 @@
          <input id="pin-no" type="text" placeholder="Enter 4 digit pin" class="input bg-[#f4f5f7] mt-3 !rounded-3xl !w-full" />
        </div> 
        <button  class="btn btn-primary mt-5 w-full !rounded-3xl" id="add-btn" >Add Money</button>
+            </form>
+        </div>
+
+
+        <!--Cash Out-->
+         <div id="cash-out">
+            <h1>Cash Out</h1>
+            <form action="" class="bg-white rounded-2xl p-8 mt-5">
+             
+               <div class="mt-5">
+         <label  class="font-semibold" for="">Agent Number</label>
+         <br>
+         <input id="agent-no" type="text" placeholder="Ente agent number" class="input bg-[#f4f5f7] mt-3 !rounded-3xl !w-full" />
+       </div>
+
+
+              <div class="mt-5">
+         <label  class="font-semibold" for="">Amount to Cash Out</label>
+         <br>
+         <input id="withdraw-amount" type="text" placeholder="Enter amount" class="input bg-[#f4f5f7] mt-3 !rounded-3xl !w-full" />
+  
+       <div class="mt-5">
+         <label class="font-semibold" for="">Pin Number</label>
+         <br>
+         <input id="pin-no" type="text" placeholder="Enter 4 digit pin" class="input bg-[#f4f5f7] mt-3 !rounded-3xl !w-full" />
+       </div> 
+       <button  class="btn btn-primary mt-5 w-full !rounded-3xl" id="out-btn" >Cash Out</button>
             </form>
         </div>
 
