@@ -1,20 +1,23 @@
-//Login funtionality
-
-document.getElementById("login-button").addEventListener("click", function(e){
+// login button functionality
+document.getElementById("loginButton").addEventListener("click",function (e){
     e.preventDefault()
-    const mobileNumber=1784038430;
-    const pinNumber=3921;
-    const mobileNumberVatue=document.getElementById("mobile-number").value;
-    const mobileConverted=parseInt(mobileNumberVatue);
-    const pinVatue=document.getElementById("pin-number").value;
-    const pinConverted=parseInt(pinVatue);
+    const mobileNumber = 12345678910
+    const pin = 1234
+    
+    const mobileNumberValue = document.getElementById
+    ("mobile-number").value
+    const mobileNumberValueConverted = parseInt(mobileNumberValue)
 
-    if(mobileConverted===mobileNumber && pinConverted===pinNumber){
+
+    const pinNumberValue = document.getElementById("pin-number").value
+
+    const pinNumberValueConverted = parseInt(pinNumberValue)
+
+    if(mobileNumberValueConverted === mobileNumber && pinNumberValueConverted===pin){
         window.location.href="./home.html"
-
     }
-    else
-    {
-        alert("Invalid Mobile or Pin");
+
+    else{
+        alert("Invalid Credentials!")
     }
 })
