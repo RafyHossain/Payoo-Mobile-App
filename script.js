@@ -18,6 +18,6 @@ document.getElementById("loginButton").addEventListener("click",function (e){
     }
 
     else{
-        alert("Invalid Credentials!")
+        alert("Invalid Number or Pin!")
     }
 })
