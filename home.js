@@ -1,4 +1,4 @@
-const validPin = 1234
+const validPin = 3921
 const transactionData = []
 
 // functions to get input values
